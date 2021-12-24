@@ -6,6 +6,9 @@ target 'PracticalRxSwift' do
   use_frameworks!
 
   # Pods for PracticalRxSwift
-  pod 'Alamofire', '5.5.0'
+  pod 'Moya/RxSwift', '15.0.0'
+  pod 'Resolver', '1.5.0'
+  pod 'RxSwift', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
 
 end
