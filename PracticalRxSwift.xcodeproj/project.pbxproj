@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		28603F53D6EE3A91E1947F34 /* Pods_PracticalRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365B837DD7DDDF35845B7D80 /* Pods_PracticalRxSwift.framework */; };
 		BC689EE32775FCCE00E502D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC689EE22775FCCE00E502D1 /* AppDelegate.swift */; };
-		BC689EE52775FCCE00E502D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC689EE42775FCCE00E502D1 /* SceneDelegate.swift */; };
 		BC689EE72775FCCE00E502D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC689EE62775FCCE00E502D1 /* ViewController.swift */; };
 		BC689EEA2775FCCE00E502D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC689EE82775FCCE00E502D1 /* Main.storyboard */; };
 		BC689EEC2775FCCF00E502D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC689EEB2775FCCF00E502D1 /* Assets.xcassets */; };
 		BC689EEF2775FCCF00E502D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC689EED2775FCCF00E502D1 /* LaunchScreen.storyboard */; };
+		BC689EF7277603A300E502D1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC689EF6277603A300E502D1 /* Networking.swift */; };
+		BC689EF9277614D100E502D1 /* MoyaNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC689EF8277614D100E502D1 /* MoyaNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +23,13 @@
 		818D97BE4C3568FD6D7E77F1 /* Pods-PracticalRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticalRxSwift.release.xcconfig"; path = "Target Support Files/Pods-PracticalRxSwift/Pods-PracticalRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		BC689EDF2775FCCE00E502D1 /* PracticalRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticalRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC689EE22775FCCE00E502D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC689EE42775FCCE00E502D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BC689EE62775FCCE00E502D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC689EE92775FCCE00E502D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC689EEB2775FCCF00E502D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC689EEE2775FCCF00E502D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC689EF02775FCCF00E502D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC689EF6277603A300E502D1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		BC689EF8277614D100E502D1 /* MoyaNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				4A780111E237F1C6D1BCF8E1 /* Pods-PracticalRxSwift.debug.xcconfig */,
 				818D97BE4C3568FD6D7E77F1 /* Pods-PracticalRxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,12 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				BC689EE22775FCCE00E502D1 /* AppDelegate.swift */,
-				BC689EE42775FCCE00E502D1 /* SceneDelegate.swift */,
 				BC689EE62775FCCE00E502D1 /* ViewController.swift */,
 				BC689EE82775FCCE00E502D1 /* Main.storyboard */,
 				BC689EEB2775FCCF00E502D1 /* Assets.xcassets */,
 				BC689EED2775FCCF00E502D1 /* LaunchScreen.storyboard */,
 				BC689EF02775FCCF00E502D1 /* Info.plist */,
+				BC689EF6277603A300E502D1 /* Networking.swift */,
+				BC689EF8277614D100E502D1 /* MoyaNetwork.swift */,
 			);
 			path = PracticalRxSwift;
 			sourceTree = "<group>";
@@ -207,9 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC689EF9277614D100E502D1 /* MoyaNetwork.swift in Sources */,
+				BC689EF7277603A300E502D1 /* Networking.swift in Sources */,
 				BC689EE72775FCCE00E502D1 /* ViewController.swift in Sources */,
 				BC689EE32775FCCE00E502D1 /* AppDelegate.swift in Sources */,
-				BC689EE52775FCCE00E502D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

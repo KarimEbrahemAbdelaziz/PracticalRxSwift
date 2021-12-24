@@ -7,5 +7,9 @@ target 'PracticalRxSwift' do
 
   # Pods for PracticalRxSwift
   pod 'Alamofire', '5.5.0'
+  pod 'RxSwift', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
+  pod 'RxAlamofire', '6.1.1'
+  pod 'Moya/RxSwift', '15.0.0'
 
 end
